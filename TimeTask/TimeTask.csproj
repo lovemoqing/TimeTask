@@ -5,11 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Hangfire" Version="1.6.21" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="aliyun-net-sdk-core">
+      <HintPath>dll\aliyun-net-sdk-core.dll</HintPath>
+    </Reference>
+    <Reference Include="aliyun-net-sdk-dysmsapi">
+      <HintPath>dll\aliyun-net-sdk-dysmsapi.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
